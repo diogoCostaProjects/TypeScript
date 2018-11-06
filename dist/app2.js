@@ -21,6 +21,9 @@ con.setListaClientes(listCli);
 var cliente = new Pessoa_1.default("Vilma", "Fusca");
 //console.log(cliente.getCarroPreferido())
 con.getListaCarros().map(function (carro) {
+    /* usando o map para mapear e capturar os objetos do tipo Carro, pegando cada
+     carro da lista de carros da concecionária e comparando com o carro preferido pelo cliente
+    */
     if (carro.getModelo() == cliente.getCarroPreferido()) {
         cliente.setCarro(carro);
     }

@@ -16,19 +16,22 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var Veiculo_1 = __importDefault(require("./Veiculo"));
-var Carro = /** @class */ (function (_super) {
-    __extends(Carro, _super);
-    function Carro(modelo, np) {
+var veiculo_1 = __importDefault(require("./veiculo"));
+var Moto = /** @class */ (function (_super) {
+    __extends(Moto, _super);
+    function Moto(modelo, cilindradas) {
         var _this = _super.call(this) || this;
-        _this.np = 0;
+        _this.cilindradas = "";
         _this.modelo = modelo;
-        _this.np = np;
+        _this.cilindradas = cilindradas;
         return _this;
     }
-    Carro.prototype.getNp = function () {
-        return this.np;
+    Moto.prototype.getCilindradas = function () {
+        return this.cilindradas;
     };
-    return Carro;
-}(Veiculo_1.default));
-exports.default = Carro;
+    Moto.prototype.acelerar = function () {
+        this.velocidade = this.velocidade + 20;
+    };
+    return Moto;
+}(veiculo_1.default));
+exports.default = Moto;

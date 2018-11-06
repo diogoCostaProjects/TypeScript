@@ -1,7 +1,7 @@
 
 import  Carro  from './Carro'
 
-export default class Pessoa{
+ class Pessoa{
 
     private nome: string = ""
     private carroPreferido: any = ""
@@ -25,3 +25,4 @@ export default class Pessoa{
          this.carro = carro 
      }
 }
+export default Pessoa

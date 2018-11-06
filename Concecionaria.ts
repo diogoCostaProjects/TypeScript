@@ -1,7 +1,7 @@
 import  Carro  from './Carro'
 import  Pessoa  from './Pessoa'
 
-export default class Concecionaria{
+class Concecionaria{
     
     private endereco: string = ""
     private listaCarros: Array<Carro> = []
@@ -25,3 +25,4 @@ export default class Concecionaria{
         this.listaClientes = listaClientes
     }
 }
+export default Concecionaria
