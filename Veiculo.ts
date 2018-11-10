@@ -17,4 +17,4 @@ class Veiculo{
         this.velocidade = 0
     }    
 }
-export default Veiculo
+export default Veiculo  

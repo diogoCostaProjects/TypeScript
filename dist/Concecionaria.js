@@ -20,6 +20,9 @@ var Concecionaria = /** @class */ (function () {
     Concecionaria.prototype.setListaClientes = function (listaClientes) {
         this.listaClientes = listaClientes;
     };
+    Concecionaria.prototype.getHorariosFuncionamento = function () {
+        return 'De segunda á sexta das 08:00 às 18:00 e sábado das 08:00 às 12:00';
+    };
     return Concecionaria;
 }());
 exports.default = Concecionaria;
